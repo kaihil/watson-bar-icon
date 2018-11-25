@@ -21,6 +21,7 @@
 		6CC5A40921A9600400C6C309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6CC5A40B21A9600400C6C309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CC5A40C21A9600400C6C309 /* watson_bar_icon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = watson_bar_icon.entitlements; sourceTree = "<group>"; };
+		6CC5A41221A98FDD00C6C309 /* watson-bar-icon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "watson-bar-icon.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +54,7 @@
 		6CC5A40121A9600200C6C309 /* watson-bar-icon */ = {
 			isa = PBXGroup;
 			children = (
+				6CC5A41221A98FDD00C6C309 /* watson-bar-icon.entitlements */,
 				6CC5A40221A9600200C6C309 /* AppDelegate.swift */,
 				6CC5A40421A9600200C6C309 /* ViewController.swift */,
 				6CC5A40621A9600400C6C309 /* Assets.xcassets */,
@@ -95,6 +97,11 @@
 				TargetAttributes = {
 					6CC5A3FE21A9600200C6C309 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -271,7 +278,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "watson-bar-icon/watson_bar_icon.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "watson-bar-icon/Info.plist";
@@ -289,7 +295,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "watson-bar-icon/watson_bar_icon.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "watson-bar-icon/Info.plist";
